@@ -1,0 +1,15 @@
+@use './color' as color;
+
+@mixin box-shadow($hover: false){
+    box-shadow:  0px 4px 4px color.$shadow;
+    @if $hover{
+        box-shadow: 0px 5px 5px color.$shadow-hover;
+      }
+}
+
+@mixin box-shadow-cards($hover: false){
+  box-shadow: 1px 1px 1px 1px color.$shadow;
+  @if $hover{
+      box-shadow: 2px 3px 6px 2px color.$shadow-hover;
+    }
+}

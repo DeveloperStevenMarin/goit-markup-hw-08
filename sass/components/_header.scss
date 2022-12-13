@@ -1,0 +1,79 @@
+@use "../utils/color" as color;
+@use "../utils/mixins" as mixin;
+@use "../components/icons" as icons;
+
+.navbar {
+  align-items: center;
+  background-color: var(--white);
+  display: flex;
+  height: 80px;
+  border-bottom: 1px solid;
+  border-color: rgba(236, 236, 236, 1);
+  justify-content: space-around;
+
+  &__logo {
+    color: color.$main-color;
+    display: block;
+    font-family: "Raleway", sans-serif;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    line-height: 31px;
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+    margin-inline-end: 0px;
+    margin-inline-start: 0px;
+    text-decoration: none;
+  }
+}
+.link-list {
+  margin-left: 100px;
+  align-items: center;
+  display: flex;
+  height: 80px;
+  list-style: none;
+  column-gap: 50px;
+  .link-list__link {
+    line-height: 77px;
+    font-weight: 700;
+  }
+  &__link--current {
+    color: color.$main-color;
+    fill: color.$main-color;
+
+    &::after {
+      line-height: 77px;
+      font-weight: 600;
+      display: block;
+      content: "";
+      height: 4px;
+      width: 100%;
+      background-color: color.$main-color;
+      border-radius: 2px;
+    }
+  }
+}
+.contact-info-list {
+  align-items: center;
+  display: flex;
+  height: 80px;
+  list-style: none;
+  column-gap: 50px;
+}
+.container-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  &:hover .icon--navbar {
+    fill: color.$main-color;
+  }
+  &__link {
+    color: color.$light-gray;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    line-height: 16px;
+  }
+}
+

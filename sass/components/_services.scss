@@ -1,0 +1,33 @@
+@use "../utils/color" as color;
+@use "../utils/mixins" as mixin;
+@use "./buttons" as buttons;
+
+.services-container {
+  align-items: center;
+  background: linear-gradient(
+      0deg,
+      color.$background-translucent,
+      color.$background-translucent
+    ),
+    url(../images/main-content-image.jpg);
+  background-attachment: fixed;
+  background-size: 100%;
+  //box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  @include mixin.box-shadow;
+  color: color.$white;
+  display: flex;
+  flex-direction: column;
+  height: 600px;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+
+  &__title {
+    color:  color.$white;
+    font-size: 44px;
+    height: 120px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 696px;
+  }
+}

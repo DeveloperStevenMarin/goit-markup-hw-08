@@ -1,0 +1,57 @@
+@use "../utils/color" as color;
+@use "../utils/mixins" as mixin;
+
+.features-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 50px;
+  padding: 0% 15%;
+
+  &__element {
+    h2 {
+      color: color.$black;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 700;
+      height: 16px;
+      left: 215px;
+      letter-spacing: 0.03em;
+      line-height: 16px;
+      text-transform: uppercase;
+      top: 775px;
+      width: 270px;
+    }
+    p {
+      color: color.$light-gray;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      height: 75px;
+      left: 215px;
+      letter-spacing: 0.03em;
+      line-height: 24px;
+      top: 801px;
+      width: 270px;
+    }
+  }
+}
+
+.feature-card {
+  //background-color: rgba(245, 244, 250, 1);
+  background-color: color.$light-gray-2;
+  width: 270px;
+  height: 120px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin-bottom: 30px;
+
+  &__icon {
+    width: 70px;
+    height: 70px;
+
+  }
+}
