@@ -1,0 +1,43 @@
+@use "../utils/color" as color;
+@use "../utils/mixins" as mixin;
+
+.icon {
+  fill: color.$light-gray;
+}
+
+.icon--footer-button {
+  fill: color.$white;
+  height: 25px;
+  width: 25px;
+}
+
+.icon--navbar {
+  display: flex;
+  align-items: center;
+  height: 16px;
+  width: 16px;
+}
+
+.icon--social-media {
+  height: 20px;
+  width: 20px;
+}
+
+.icon--social-media-footer {
+  height: 20px;
+  width: 20px;
+}
+
+.icon--company {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icon--input-modal {
+  fill: color.$black;
+  position: absolute;
+  top: 65%;
+  left: 3%;
+  height: 13px;
+  width: 13px;
+}

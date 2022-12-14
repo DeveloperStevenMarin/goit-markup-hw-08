@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="./css/styles.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="node_modules/modern-normalize/modern-normalize.css"
+    />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>WebStudio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <header class="navbar">
+      <nav>
+        <a href="#">
+          <p class="navbar__logo">WebStudio</p>
+        </a>
+        <ul class="link-list">
+          <li>
+            <a
+              id="estudio"
+              href="index.html"
+              class="link-list__link"
+              >Estudio</a
+            >
+          </li>
+          <li>
+            <a id="portafolio" href="portfolio.html" class="link-list__link link-list__link--current"
+              >Portafolio</a
+            >
+          </li>
+          <li>
+            <a id="contactos" href="#footer" class="link-list__link"
+              >Contactos</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <ul class="contact-info-list">
+        <li>
+          <figure class="container-info">
+            <svg class="icon icon--navbar">
+              <use href="images/icons.svg#email"></use>
+            </svg>
+            <a
+              href="mailto:info@devstudio.com"
+              target="_blank"
+              class="container-info__link"
+              >info@devstudio.com</a
+            >
+          </figure>
+        </li>
+        <li>
+          <figure class="container-info">
+            <svg class="icon icon--navbar">
+              <use href="images/icons.svg#smartphone"></use>
+            </svg>
+            <a
+              href="tel:+525555296000"
+              target="_blank"
+              class="container-info__link"
+              >+52 55 5529 6000</a
+            >
+          </figure>
+        </li>
+      </ul>
+    </header>
+    
+    <main>
+      <article class="portfolio-container">
+        <ul class="category-container">
+          <li><button class="button button--category-container">Todo</button></li>
+          <li><button class="button button--category-container">Sitios-Web</button></li>
+          <li><button class="button button--category-container">Aplicaciones</button></li>
+          <li><button class="button button--category-container">Diseño</button></li>
+          <li><button class="button button--category-container">Marketing</button></li>
+        </ul>
+        <ul class="product-cards">
+          <li class="card card--products">
+            <figure>
+              <div class="card card--emergent">
+                <p class="product-description">
+                  Tecnoduck es una plataforma de distribución de coronavirus de
+                  última generación. Las compañías usan esta plataforma para el
+                  espionaje digital y los ataques a los servidores seguros de la
+                  competencia.
+                </p>
+              </div>
+              <img src="images/product1.jpg" alt="Imagen del portafolio" />
+              <p class="card--products__name">Tecnoduck</p>
+              <p class="card--products__category">Sitio-web</p>
+            </figure>
+          </li>
+          <li class="card card--products">
+            <figure>
+              <div class="card card--emergent">
+                <p class="product-description">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since the 1500s, when an unknown
+                  printer took a galley of type and scrambled it to make a type
+                  specimen book. 
+                </p>
+              </div>
+              <img src="images/product2.jpg" alt="Imagen del portafolio" />
+              <p class="card--products__name">
+                Póster de Nueva Orleans vs Estrella Dorada
+              </p>
+              <p class="card--products__category">Diseño</p>
+            </figure>
+          </li>
+          <li class="card card--products">
+            <figure>
+              <div class="card card--emergent">
+                <p class="product-description">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since the 1500s, when an unknown
+                  printer took a galley of type and scrambled it to make a type
+                  specimen book. 
+                </p>
+              </div>
+              <img src="images/product3.jpg" alt="Imagen del portafolio" />
+              <p class="card--products__name">Restaurante Seafood</p>
+              <p class="card--products__category">Aplicaciones</p>
+            </figure>
+          </li>
+          <li class="card card--products">
+            <figure>
+              <div class="card card--emergent">
+                <p class="product-description">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since the 1500s, when an unknown
+                  printer took a galley of type and scrambled it to make a type
+                  specimen book. 
+                </p>
+              </div>
+              <img src="images/product4.jpg" alt="Imagen del portafolio" />
+              <p class="card--products__name">Proyecto Prime</p>
+              <p class="card--products__category">Marketing</p>
+            </figure>
+          </li>
+          <li class="card card--products">
+            <figure>
+              <div class="card card--emergent">
+                <p class="product-description">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since the 1500s, when an unknown
+                  printer took a galley of type and scrambled it to make a type
+                  specimen book. 
+                </p>
+              </div>
+              <img src="images/product5.jpg" alt="Imagen del portafolio" />
+              <p class="card--products__name">Proyecto Cajas</p>
+              <p class="card--products__category">Aplicaciones</p>
+            </figure>
+          </li>
+          <li class="card card--products">
+            <figure>
+              <div class="card card--emergent">
+                <p class="product-description">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since the 1500s, when an unknown
+                  printer took a galley of type and scrambled it to make a type
+                  specimen book. 
+                </p>
+              </div>
+              <img src="images/product6.jpg" alt="Imagen del portafolio" />
+              <p class="card--products__name">La inspiración no tiene límites</p>
+              <p class="card--products__category">Sitio-web</p>
+            </figure>
+          </li>
+          <li class="card card--products">
+            <figure>
+              <div class="card card--emergent">
+                <p class="product-description">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since the 1500s, when an unknown
+                  printer took a galley of type and scrambled it to make a type
+                  specimen book. 
+                </p>
+              </div>
+              <img src="images/product7.jpg" alt="Imagen del portafolio" />
+              <p class="card--products__name">Edición Limitada</p>
+              <p class="card--products__category">Diseño</p>
+            </figure>
+          </li>
+          <li class="card card--products">
+            <figure>
+              <div class="card card--emergent">
+                <p class="product-description">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since the 1500s, when an unknown
+                  printer took a galley of type and scrambled it to make a type
+                  specimen book. 
+                </p>
+              </div>
+              <img src="images/product8.jpg" alt="Imagen del portafolio" />
+              <p class="card--products__name">Proyecto LAB</p>
+              <p class="card--products__category">Marketing</p>
+            </figure>
+          </li>
+          <li class="card card--products">
+            <figure>
+              <div class="card card--emergent">
+                <p class="product-description">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since the 1500s, when an unknown
+                  printer took a galley of type and scrambled it to make a type
+                  specimen book. 
+                </p>
+              </div>
+              <img src="images/product9.jpg" alt="Imagen del portafolio" />
+              <p class="card--products__name">Negocio en Crecimiento</p>
+              <p class="card--products__category">Aplicaciones</p>
+            </figure>
+          </li>
+        </ul>
+      </article>
+    </main>
+    <footer id="footer">
+      <article class="footer-contact">
+        <a href="#">
+          <p class="footer-contact__logo">WebStudio</p>
+        </a>
+        <address>
+          <ul class="footer-contact__list">
+            <li><p>Calz. Ticomán 500, Ciudad de México, CDMX, México</p></li>
+            <li>
+              <p style="color: rgba(255, 255, 255, 0.6)">info@example.com</p>
+            </li>
+            <li>
+              <p style="color: rgba(255, 255, 255, 0.6)">+52 55 5529 6000</p>
+            </li>
+          </ul>
+        </address>
+      </article>
+      <article class="footer-social-media">
+        <h2 class="footer-social-media__title">ENCUENTRENOS EN</h2>
+        <ul>
+          <li>
+            <a
+              href="http://instagram.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="button button--social-media-footer"
+            >
+              <svg>
+                <use href="images/icons.svg#instagram"></use>
+              </svg>
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="http://twitter.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="button button--social-media-footer"
+            >
+              <svg>
+                <use href="images/icons.svg#twitter"></use>
+              </svg>
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="http://facebook.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="button button--social-media-footer"
+            >
+              <svg>
+                <use href="images/icons.svg#facebook"></use>
+              </svg>
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="http://linkedin.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="button button--social-media-footer"
+            >
+              <svg>
+                <use href="images/icons.svg#linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </article>
+      <div class="subscribe-container">
+        <form action="">
+          <div class="subscribe-container__form-container">
+            <label for="subscribe-email"
+              >SUSCRÍBASE al boletín informativo.</label
+            >
+            <input
+              type="email"
+              name="subscribe-email"
+              id="subscribe-email"
+              placeholder="Correo electrónico"
+            />
+          </div>
+          <button type="submit" class="button button--footer">
+            Suscríbase<svg class="icon icon--footer-button">
+              <use href="images/icons.svg#telegram"></use>
+            </svg>
+          </button>
+        </form>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,59 @@
+@use "../utils/color" as color;
+@use "../utils/mixins" as mixin;
+
+.features-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 50px;
+  padding: 0% 15%;
+
+  &__element {
+    h2 {
+      color: color.$black;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 700;
+      height: 16px;
+      left: 215px;
+      letter-spacing: 0.03em;
+      line-height: 16px;
+      text-transform: uppercase;
+      top: 775px;
+      width: 270px;
+    }
+    p {
+      color: color.$light-gray;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      height: 75px;
+      left: 215px;
+      letter-spacing: 0.03em;
+      line-height: 24px;
+      top: 801px;
+      width: 270px;
+    }
+  }
+}
+
+@media screen and (max-width: 1172px) {
+  .features-list {
+    width: 1172px;
+    flex-wrap: wrap;
+    padding: 200px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .features-list {
+    width: 768px;
+    flex-wrap: wrap;
+    padding: 0px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .features-list {
+    width: 480px;
+    flex-wrap: wrap;
+  }
+}
