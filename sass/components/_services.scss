@@ -23,11 +23,48 @@
   position: relative;
 
   &__title {
-    color:  color.$white;
+    color: color.$white;
     font-size: 44px;
     height: 120px;
     text-align: center;
     text-transform: uppercase;
     width: 696px;
   }
+}
+@media screen and (max-width: 1172px) {
+  .services-container {
+    background-size: auto;
+    width: 1172px;
+    height: 400px;
+    &__title {
+      height: 85px;
+      width: 70%;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .services-container {
+    background-size: auto;
+    width: 768px;
+    height: 400px;
+    &__title {
+      height: 85px;
+      width: 70%;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .services-container {
+    background-size: auto;
+    background-repeat: no-repeat;
+    width: 480px;
+    height: 400px;
+    &__title {
+      height: 80px;
+      width: 70%;
+      font-size: 26px;
+    }
+  }
+
 }

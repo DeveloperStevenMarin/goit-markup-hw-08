@@ -74,7 +74,6 @@
     margin: 6px 0px;
   }
 
-  
   label {
     text-transform: capitalize;
     color: rgba(117, 117, 117, 1);
@@ -85,7 +84,7 @@
     outline: none;
     border-color: color.$main-color;
   }
-  input:focus + .icon--input-modal  {
+  input:focus + .icon--input-modal {
     height: 15px;
     width: 15px;
     fill: color.$main-color;
@@ -140,3 +139,20 @@
     color: rgba(117, 117, 117, 1);
   }
 }
+@media screen and (max-width: 1172px) {
+  .backdrop {
+    width: 1172px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .backdrop {
+    width: 768px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .backdrop {
+    width: auto;
+  }
+}
+

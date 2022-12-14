@@ -1,3 +1,9 @@
+@import "utils/color";
+@import "utils/config";
+@import "utils/mixins";
+@import "utils/utils";
+
+
 @import "./components/header";
 @import "./components/footer";
 @import "./components/cards";
@@ -11,10 +17,6 @@
 @import "./components/icons";
 @import "./components/_portfolio";
 
-@import "utils/color";
-@import "utils/config";
-@import "utils/mixins";
-@import "utils/utils";
 
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@;400;500;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");

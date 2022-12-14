@@ -37,21 +37,23 @@
   }
 }
 
-.feature-card {
-  //background-color: rgba(245, 244, 250, 1);
-  background-color: color.$light-gray-2;
-  width: 270px;
-  height: 120px;
-  border-radius: 4px;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
-  margin-bottom: 30px;
-
-  &__icon {
-    width: 70px;
-    height: 70px;
-
+@media screen and (max-width: 1172px) {
+  .features-list {
+    width: 1172px;
+    flex-wrap: wrap;
+    padding: 200px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .features-list {
+    width: 768px;
+    flex-wrap: wrap;
+    padding: 0px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .features-list {
+    width: 480px;
+    flex-wrap: wrap;
   }
 }

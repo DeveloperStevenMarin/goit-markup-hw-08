@@ -105,3 +105,15 @@
     color: color.$white;
   }
 }
+@media screen and (max-width: 768px) {
+  .button--services{
+    
+    width: 200px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .button--services{
+    margin: 30px;
+    width: 200px;
+  }
+}
