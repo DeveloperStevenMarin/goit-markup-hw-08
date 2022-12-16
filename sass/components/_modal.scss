@@ -173,13 +173,14 @@
 
   .custom-input {
     width: 80%;
+    textarea{
+      width: 95%;
+    }
   }
 
   .terms-conditions-container {
     width: 80%
 
-    label {
-      width: 80%;
-    }
+   
   }
 }

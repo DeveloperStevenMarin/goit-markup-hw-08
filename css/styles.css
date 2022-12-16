@@ -218,6 +218,9 @@ address {
   .button--menu {
     display: flex;
   }
+  .button--close-modal {
+    left: 89%;
+  }
 }
 .icon {
   fill: rgb(117, 117, 117);
@@ -443,9 +446,11 @@ address {
   .custom-input {
     width: 80%;
   }
+  .custom-input textarea {
+    width: 95%;
+  }
   .terms-conditions-container {
-    width: 80% label;
-    width-width: 80%;
+    width: 80%;
   }
 }
 .button {
@@ -608,6 +613,9 @@ address {
   }
   .button--menu {
     display: flex;
+  }
+  .button--close-modal {
+    left: 89%;
   }
 }
 .icon {
@@ -814,7 +822,7 @@ address {
   border-bottom: 1px solid;
   border-color: rgb(236, 236, 236);
   justify-content: space-around;
-  flex-direction: row-reverse;
+  flex-direction: row;
 }
 .navbar__logo {
   color: rgb(33, 150, 243);
@@ -932,6 +940,7 @@ address {
   .navbar {
     width: auto;
     justify-content: space-between;
+    flex-direction: row-reverse;
   }
   .navbar__logo {
     font-size: 24px;
@@ -1107,6 +1116,9 @@ address {
   }
   .button--menu {
     display: flex;
+  }
+  .button--close-modal {
+    left: 89%;
   }
 }
 .icon {
@@ -1582,6 +1594,9 @@ address {
   .button--menu {
     display: flex;
   }
+  .button--close-modal {
+    left: 89%;
+  }
 }
 .services-container {
   align-items: center;
@@ -2037,6 +2052,9 @@ address {
   .button--menu {
     display: flex;
   }
+  .button--close-modal {
+    left: 89%;
+  }
 }
 .team-container {
   background-color: rgb(245, 244, 250);
@@ -2471,6 +2489,9 @@ address {
   .button--menu {
     display: flex;
   }
+  .button--close-modal {
+    left: 89%;
+  }
 }
 .icon {
   fill: rgb(117, 117, 117);
@@ -2691,6 +2712,9 @@ address {
   }
   .button--menu {
     display: flex;
+  }
+  .button--close-modal {
+    left: 89%;
   }
 }
 .icon {
