@@ -141,18 +141,45 @@
 }
 @media screen and (max-width: 1172px) {
   .backdrop {
-    width: 1172px;
+    width: auto;
   }
 }
 
 @media screen and (max-width: 768px) {
   .backdrop {
-    width: 768px;
+    width: auto;
   }
 }
 @media screen and (max-width: 480px) {
   .backdrop {
-    width: auto;
+    width: 480px;
+  }
+  .modal {
+    width: 80%;
+    &__title {
+      width: 80%;
+    }
+  }
+  label{
+    width: 80%;
+  }
+  .modal-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 20px;
+  }
+
+  .custom-input {
+    width: 80%;
+  }
+
+  .terms-conditions-container {
+    width: 80%
+
+    label {
+      width: 80%;
+    }
   }
 }
-

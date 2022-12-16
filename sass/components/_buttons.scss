@@ -37,11 +37,6 @@
     transform: rotate(360deg);
     transition: transform 500ms ease;
   }
-
-  svg {
-    height: 12px;
-    width: 12px;
-  }
 }
 
 .button--services {
@@ -105,15 +100,52 @@
     color: color.$white;
   }
 }
+
+.button--menu {
+  background-color: transparent;
+  height: fit-content;
+  width: fit-content;
+  margin-right: 25px;
+  box-shadow: none;
+  display: none;
+  border: 0px;
+  &:hover {
+    box-shadow: none;
+    border: 0px;
+  }
+  &:focus {
+    box-shadow: none;
+    border: 0px;
+  }
+}
+.button--close-mobile {
+  width: fit-content;
+  height: fit-content;
+  margin: 30px 20px 0px 410px;
+  background-color: transparent;
+  border: 0px;
+  box-shadow: none;
+  &:hover {
+    box-shadow: none;
+    border: 0px;
+  }
+  &:focus {
+    box-shadow: none;
+    border: 0px;
+  }
+}
+
 @media screen and (max-width: 768px) {
-  .button--services{
-    
+  .button--services {
     width: 200px;
   }
 }
 @media screen and (max-width: 480px) {
-  .button--services{
+  .button--services {
     margin: 30px;
     width: 200px;
+  }
+  .button--menu {
+    display: flex;
   }
 }

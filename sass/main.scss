@@ -3,11 +3,11 @@
 @import "utils/mixins";
 @import "utils/utils";
 
-
+@import "./components/modal";
+@import "./components/mobile-menu";
 @import "./components/header";
 @import "./components/footer";
 @import "./components/cards";
-@import "./components/modal";
 @import "./components/services";
 @import "./components/our-job";
 @import "./components/team";
