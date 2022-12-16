@@ -28,21 +28,26 @@
   </head>
   <body>
     <header class="navbar">
+      <button class="button button--menu" id="open-menu">
+        <svg class="icon icon--menu">
+          <use href="images/icons.svg#menu"></use>
+        </svg>
+      </button>
       <nav>
         <a href="#">
           <p class="navbar__logo">WebStudio</p>
         </a>
         <ul class="link-list">
           <li>
-            <a
-              id="estudio"
-              href="index.html"
-              class="link-list__link"
+            <a id="estudio" href="index.html" class="link-list__link"
               >Estudio</a
             >
           </li>
           <li>
-            <a id="portafolio" href="portfolio.html" class="link-list__link link-list__link--current"
+            <a
+              id="portafolio"
+              href="portfolio.html"
+              class="link-list__link link-list__link--current"
               >Portafolio</a
             >
           </li>
@@ -82,15 +87,29 @@
         </li>
       </ul>
     </header>
-    
+
     <main>
       <article class="portfolio-container">
         <ul class="category-container">
-          <li><button class="button button--category-container">Todo</button></li>
-          <li><button class="button button--category-container">Sitios-Web</button></li>
-          <li><button class="button button--category-container">Aplicaciones</button></li>
-          <li><button class="button button--category-container">Diseño</button></li>
-          <li><button class="button button--category-container">Marketing</button></li>
+          <li>
+            <button class="button button--category-container">Todo</button>
+          </li>
+          <li>
+            <button class="button button--category-container">
+              Sitios-Web
+            </button>
+          </li>
+          <li>
+            <button class="button button--category-container">
+              Aplicaciones
+            </button>
+          </li>
+          <li>
+            <button class="button button--category-container">Diseño</button>
+          </li>
+          <li>
+            <button class="button button--category-container">Marketing</button>
+          </li>
         </ul>
         <ul class="product-cards">
           <li class="card card--products">
@@ -116,7 +135,7 @@
                   typesetting industry. Lorem Ipsum has been the industry's
                   standard dummy text ever since the 1500s, when an unknown
                   printer took a galley of type and scrambled it to make a type
-                  specimen book. 
+                  specimen book.
                 </p>
               </div>
               <img src="images/product2.jpg" alt="Imagen del portafolio" />
@@ -134,7 +153,7 @@
                   typesetting industry. Lorem Ipsum has been the industry's
                   standard dummy text ever since the 1500s, when an unknown
                   printer took a galley of type and scrambled it to make a type
-                  specimen book. 
+                  specimen book.
                 </p>
               </div>
               <img src="images/product3.jpg" alt="Imagen del portafolio" />
@@ -150,7 +169,7 @@
                   typesetting industry. Lorem Ipsum has been the industry's
                   standard dummy text ever since the 1500s, when an unknown
                   printer took a galley of type and scrambled it to make a type
-                  specimen book. 
+                  specimen book.
                 </p>
               </div>
               <img src="images/product4.jpg" alt="Imagen del portafolio" />
@@ -166,7 +185,7 @@
                   typesetting industry. Lorem Ipsum has been the industry's
                   standard dummy text ever since the 1500s, when an unknown
                   printer took a galley of type and scrambled it to make a type
-                  specimen book. 
+                  specimen book.
                 </p>
               </div>
               <img src="images/product5.jpg" alt="Imagen del portafolio" />
@@ -182,11 +201,13 @@
                   typesetting industry. Lorem Ipsum has been the industry's
                   standard dummy text ever since the 1500s, when an unknown
                   printer took a galley of type and scrambled it to make a type
-                  specimen book. 
+                  specimen book.
                 </p>
               </div>
               <img src="images/product6.jpg" alt="Imagen del portafolio" />
-              <p class="card--products__name">La inspiración no tiene límites</p>
+              <p class="card--products__name">
+                La inspiración no tiene límites
+              </p>
               <p class="card--products__category">Sitio-web</p>
             </figure>
           </li>
@@ -198,7 +219,7 @@
                   typesetting industry. Lorem Ipsum has been the industry's
                   standard dummy text ever since the 1500s, when an unknown
                   printer took a galley of type and scrambled it to make a type
-                  specimen book. 
+                  specimen book.
                 </p>
               </div>
               <img src="images/product7.jpg" alt="Imagen del portafolio" />
@@ -214,7 +235,7 @@
                   typesetting industry. Lorem Ipsum has been the industry's
                   standard dummy text ever since the 1500s, when an unknown
                   printer took a galley of type and scrambled it to make a type
-                  specimen book. 
+                  specimen book.
                 </p>
               </div>
               <img src="images/product8.jpg" alt="Imagen del portafolio" />
@@ -230,7 +251,7 @@
                   typesetting industry. Lorem Ipsum has been the industry's
                   standard dummy text ever since the 1500s, when an unknown
                   printer took a galley of type and scrambled it to make a type
-                  specimen book. 
+                  specimen book.
                 </p>
               </div>
               <img src="images/product9.jpg" alt="Imagen del portafolio" />
@@ -335,5 +356,45 @@
         </form>
       </div>
     </footer>
+    <div class="mobile-menu-container" id="menu-container">
+      <button id="close-menu" class="button button--close-mobile">
+        <svg class="icon icon--close-mobile">
+          <use href="images/icons.svg#close"></use>
+        </svg>
+      </button>
+      <ul class="mobile-menu-list">
+        <li class="mobile-menu-list__link">
+          <a href="/index.html">Estudio</a>
+        </li>
+        <li class="mobile-menu-list__link mobile-menu-list__link--current">
+          <a href="/portfolio.html">Portafolio</a>
+        </li>
+        <li class="mobile-menu-list__link"><a href="#footer">Contactos</a></li>
+      </ul>
+      <ul class="mobile-menu-contact">
+        <li class="mobile-menu-contact mobile-menu-contact__info">
+          +38 096 111 11 11
+        </li>
+        <li class="mobile-menu-contact mobile-menu-contact__info">
+          info@devstudio.com
+        </li>
+      </ul>
+      <ul class="mobile-menu-social">
+        <li class="mobile-menu-social mobile-menu-social__red">
+          <a href="">Instagram</a>
+        </li>
+        <li class="mobile-menu-social mobile-menu-social__red">
+          <a href="">Twitter</a>
+        </li>
+        <li class="mobile-menu-social mobile-menu-social__red">
+          <a href="">Facebook</a>
+        </li>
+        <li class="mobile-menu-social mobile-menu-social__red">
+          <a href="">LinkedIn</a>
+        </li>
+      </ul>
+    </div>
+
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
