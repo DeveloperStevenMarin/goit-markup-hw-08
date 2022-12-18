@@ -188,8 +188,8 @@ address {
 
 .button--close-mobile {
   width: fit-content;
-  height: fit-content;
-  margin: 30px 20px 0px 410px;
+  height: 80px;
+  margin: 0px 25px;
   background-color: transparent;
   border: 0px;
   box-shadow: none;
@@ -210,16 +210,13 @@ address {
     width: 200px;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 700px) {
   .button--services {
     margin: 30px;
     width: 200px;
   }
   .button--menu {
     display: flex;
-  }
-  .button--close-modal {
-    left: 89%;
   }
 }
 .icon {
@@ -413,20 +410,12 @@ address {
   color: rgb(117, 117, 117);
 }
 
-@media screen and (max-width: 1172px) {
-  .backdrop {
-    width: auto;
-  }
-}
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
   .backdrop {
     width: auto;
   }
 }
 @media screen and (max-width: 480px) {
-  .backdrop {
-    width: 480px;
-  }
   .modal {
     width: 80%;
   }
@@ -584,8 +573,8 @@ address {
 
 .button--close-mobile {
   width: fit-content;
-  height: fit-content;
-  margin: 30px 20px 0px 410px;
+  height: 80px;
+  margin: 0px 25px;
   background-color: transparent;
   border: 0px;
   box-shadow: none;
@@ -606,16 +595,13 @@ address {
     width: 200px;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 700px) {
   .button--services {
     margin: 30px;
     width: 200px;
   }
   .button--menu {
     display: flex;
-  }
-  .button--close-modal {
-    left: 89%;
   }
 }
 .icon {
@@ -686,14 +672,22 @@ address {
   justify-content: space-between;
   top: 0%;
   left: 0%;
-  width: 100%;
-  height: 100%;
+  width: 80%;
+  height: 80%;
   background-color: rgb(255, 255, 255);
   visibility: hidden;
   opacity: 0;
 }
+.mobile-menu-container__close-icon-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
 
 .mobile-menu-container--is-open {
+  width: 100%;
+  height: 100%;
   visibility: visible;
   opacity: 1;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1) visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -893,10 +887,11 @@ address {
 
 @media screen and (max-width: 1100px) {
   nav {
-    gap: 80px;
+    gap: 10%;
   }
   .navbar {
     width: auto;
+    justify-content: space-evenly;
   }
   .navbar__logo {
     font-size: 24px;
@@ -913,11 +908,8 @@ address {
   }
 }
 @media screen and (max-width: 768px) {
-  nav {
-    gap: 80px;
-  }
   .navbar {
-    width: auto;
+    justify-content: space-around;
   }
   .navbar__logo {
     font-size: 24px;
@@ -933,12 +925,8 @@ address {
     margin-left: 0px;
   }
 }
-@media screen and (max-width: 480px) {
-  nav {
-    gap: 80px;
-  }
+@media screen and (max-width: 700px) {
   .navbar {
-    width: auto;
     justify-content: space-between;
     flex-direction: row-reverse;
   }
@@ -1087,8 +1075,8 @@ address {
 
 .button--close-mobile {
   width: fit-content;
-  height: fit-content;
-  margin: 30px 20px 0px 410px;
+  height: 80px;
+  margin: 0px 25px;
   background-color: transparent;
   border: 0px;
   box-shadow: none;
@@ -1109,16 +1097,13 @@ address {
     width: 200px;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 700px) {
   .button--services {
     margin: 30px;
     width: 200px;
   }
   .button--menu {
     display: flex;
-  }
-  .button--close-modal {
-    left: 89%;
   }
 }
 .icon {
@@ -1269,6 +1254,7 @@ address {
 @media screen and (max-width: 1370px) {
   footer {
     flex-wrap: wrap;
+    justify-content: space-around;
   }
   .footer-contact {
     align-items: center;
@@ -1295,23 +1281,30 @@ address {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    margin: 0px 30px;
   }
   .subscribe-container__form-container {
     align-items: center;
   }
 }
-@media screen and (max-width: 1172px) {
+@media screen and (max-width: 1200px) {
   footer {
-    height: 465px;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    height: 465px;
+  }
+}
+@media screen and (max-width: 900px) {
+  footer {
+    height: 456px;
   }
 }
 @media screen and (max-width: 480px) {
   footer {
     height: 600px;
+  }
+  .subscribe-container form {
+    margin: 0px;
   }
   .footer-social-media {
     align-items: center;
@@ -1564,8 +1557,8 @@ address {
 
 .button--close-mobile {
   width: fit-content;
-  height: fit-content;
-  margin: 30px 20px 0px 410px;
+  height: 80px;
+  margin: 0px 25px;
   background-color: transparent;
   border: 0px;
   box-shadow: none;
@@ -1586,7 +1579,7 @@ address {
     width: 200px;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 700px) {
   .button--services {
     margin: 30px;
     width: 200px;
@@ -1594,15 +1587,13 @@ address {
   .button--menu {
     display: flex;
   }
-  .button--close-modal {
-    left: 89%;
-  }
 }
 .services-container {
   align-items: center;
   background: linear-gradient(0deg, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/main-content-image.jpg);
   background-attachment: fixed;
-  background-size: 100%;
+  background-size: 100% 69.7%;
+  background-repeat: no-repeat;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.14);
   color: rgb(255, 255, 255);
   display: flex;
@@ -1621,10 +1612,9 @@ address {
   width: 696px;
 }
 
-@media screen and (max-width: 1172px) {
+@media screen and (max-width: 1200px) {
   .services-container {
-    background-size: auto;
-    width: 1172px;
+    width: auto;
     height: 400px;
   }
   .services-container__title {
@@ -1632,28 +1622,26 @@ address {
     width: 70%;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 770px) {
   .services-container {
-    background-size: auto;
-    width: 768px;
     height: 400px;
   }
   .services-container__title {
-    height: 85px;
-    width: 70%;
+    height: 30%;
+    width: 68%;
+    margin: 0px 0px 30px 0px;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 478px) {
   .services-container {
-    background-size: auto;
     background-repeat: no-repeat;
-    width: 480px;
     height: 400px;
   }
   .services-container__title {
     height: 80px;
     width: 70%;
     font-size: 26px;
+    margin: 0px;
   }
 }
 .our-job-container__title {
@@ -1698,12 +1686,7 @@ address {
   align-items: center;
 }
 
-@media screen and (max-width: 1172px) {
-  .our-job-container {
-    display: none;
-  }
-}
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 1200px) {
   .our-job-container {
     display: none;
   }
@@ -2022,8 +2005,8 @@ address {
 
 .button--close-mobile {
   width: fit-content;
-  height: fit-content;
-  margin: 30px 20px 0px 410px;
+  height: 80px;
+  margin: 0px 25px;
   background-color: transparent;
   border: 0px;
   box-shadow: none;
@@ -2044,16 +2027,13 @@ address {
     width: 200px;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 700px) {
   .button--services {
     margin: 30px;
     width: 200px;
   }
   .button--menu {
     display: flex;
-  }
-  .button--close-modal {
-    left: 89%;
   }
 }
 .team-container {
@@ -2124,23 +2104,22 @@ address {
   width: 260px;
 }
 
-@media screen and (max-width: 1172px) {
+@media screen and (max-width: 1200px) {
   .team-container__list {
-    width: 1172px;
+    width: auto;
     gap: 30px;
+    padding: 0px 15%;
     flex-wrap: wrap;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 815px) {
   .team-container__list {
-    width: 768px;
-    padding: 10px;
-    flex-wrap: wrap;
+    padding: 0px 5%;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 650px) {
   .team-container__list {
-    width: 480px;
+    padding: 0px 2%;
   }
 }
 .icon {
@@ -2247,7 +2226,7 @@ address {
   cursor: pointer;
 }
 
-@media screen and (max-width: 1172px) {
+@media screen and (max-width: 1200px) {
   .clients-container {
     display: flex;
     flex-direction: column;
@@ -2255,35 +2234,35 @@ address {
     align-items: center;
   }
   .clients-container__list {
-    width: 1172px;
+    width: auto;
+    padding: 0px 15px;
+    flex-wrap: wrap;
+    margin: 45px 17% 150px 17%;
+  }
+}
+@media screen and (max-width: 910px) {
+  .clients-container {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .clients-container__list {
+    padding: 0px 15px;
+    margin: 45px 7% 150px 7%;
+  }
+}
+@media screen and (max-width: 478px) {
+  .clients-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .clients-container__list {
     padding: 0px;
-    flex-wrap: wrap;
-  }
-}
-@media screen and (max-width: 768px) {
-  .clients-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .clients-container__list {
-    width: 768px;
-    padding: 0px 15px;
-    flex-wrap: wrap;
-  }
-}
-@media screen and (max-width: 480px) {
-  .clients-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .clients-container__list {
-    width: 480px;
-    padding: 0px 15px;
-    flex-wrap: wrap;
+    margin: 45px 0% 150px 0%;
   }
 }
 .features-list {
@@ -2319,24 +2298,25 @@ address {
   width: 270px;
 }
 
-@media screen and (max-width: 1172px) {
+@media screen and (max-width: 1200px) {
   .features-list {
-    width: 1172px;
+    width: auto;
     flex-wrap: wrap;
-    padding: 200px;
+    margin: 50px 5% 0px 5%;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
   .features-list {
-    width: 768px;
+    width: auto;
     flex-wrap: wrap;
     padding: 0px;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 478px) {
   .features-list {
-    width: 480px;
+    width: auto;
     flex-wrap: wrap;
+    margin: 50px 0% 0px 0%;
   }
 }
 .button {
@@ -2461,8 +2441,8 @@ address {
 
 .button--close-mobile {
   width: fit-content;
-  height: fit-content;
-  margin: 30px 20px 0px 410px;
+  height: 80px;
+  margin: 0px 25px;
   background-color: transparent;
   border: 0px;
   box-shadow: none;
@@ -2481,16 +2461,13 @@ address {
     width: 200px;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 700px) {
   .button--services {
     margin: 30px;
     width: 200px;
   }
   .button--menu {
     display: flex;
-  }
-  .button--close-modal {
-    left: 89%;
   }
 }
 .icon {
@@ -2683,8 +2660,8 @@ address {
 
 .button--close-mobile {
   width: fit-content;
-  height: fit-content;
-  margin: 30px 20px 0px 410px;
+  height: 80px;
+  margin: 0px 25px;
   background-color: transparent;
   border: 0px;
   box-shadow: none;
@@ -2705,16 +2682,13 @@ address {
     width: 200px;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 700px) {
   .button--services {
     margin: 30px;
     width: 200px;
   }
   .button--menu {
     display: flex;
-  }
-  .button--close-modal {
-    left: 89%;
   }
 }
 .icon {
@@ -2927,6 +2901,12 @@ address {
   justify-content: space-around;
   margin-bottom: 80px;
   margin-top: 50px;
+}
+
+@media screen and (max-width: 565px) {
+  .category-container {
+    flex-wrap: wrap;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

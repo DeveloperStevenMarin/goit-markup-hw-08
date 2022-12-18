@@ -139,21 +139,15 @@
     color: rgba(117, 117, 117, 1);
   }
 }
-@media screen and (max-width: 1172px) {
+@media screen and (max-width: 1200px) {
   .backdrop {
     width: auto;
   }
 }
 
-@media screen and (max-width: 768px) {
-  .backdrop {
-    width: auto;
-  }
-}
+
 @media screen and (max-width: 480px) {
-  .backdrop {
-    width: 480px;
-  }
+  
   .modal {
     width: 80%;
     &__title {

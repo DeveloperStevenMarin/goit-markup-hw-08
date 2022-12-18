@@ -95,6 +95,7 @@
 @media screen and (max-width: 1370px) {
   footer {
     flex-wrap: wrap;
+    justify-content: space-around;
   }
   .footer-contact {
     align-items: center;
@@ -120,25 +121,33 @@
       flex-wrap: wrap;
       justify-content: center;
       align-items: center;
+      margin: 0px 30px;
     }
   }
   .subscribe-container__form-container {
     align-items: center;
   }
 }
-@media screen and (max-width: 1172px) {
+@media screen and (max-width: 1200px) {
   footer {
-    height: 465px;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    height: 465px;
   }
-
+}
+@media screen and (max-width: 900px) {
+  footer{
+    height: 456px;
+  }
 }
 @media screen and (max-width: 480px) {
   footer{
     height: 600px;
+  }
+  .subscribe-container{
+    form{
+      margin: 0px;
+    }
   }
   .footer-social-media{
     align-items: center;
