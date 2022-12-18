@@ -11,7 +11,8 @@
     ),
     url(../images/main-content-image.jpg);
   background-attachment: fixed;
-  background-size: 100%;
+  background-size: 100% 69.7%;
+  background-repeat: no-repeat;
   //box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   @include mixin.box-shadow;
   color: color.$white;
@@ -31,10 +32,9 @@
     width: 696px;
   }
 }
-@media screen and (max-width: 1172px) {
+@media screen and (max-width: 1200px) {
   .services-container {
-    background-size: auto;
-    width: 1172px;
+    width: auto;
     height: 400px;
     &__title {
       height: 85px;
@@ -42,28 +42,26 @@
     }
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 770px) {
   .services-container {
-    background-size: auto;
-    width: 768px;
     height: 400px;
     &__title {
-      height: 85px;
-      width: 70%;
+      height: 30%;
+      width: 68%;
+      margin: 0px 0px 30px 0px;
     }
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 478px) {
   .services-container {
-    background-size: auto;
     background-repeat: no-repeat;
-    width: 480px;
     height: 400px;
     &__title {
       height: 80px;
       width: 70%;
       font-size: 26px;
+      margin: 0px;
     }
   }
 
